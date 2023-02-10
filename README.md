@@ -13,6 +13,9 @@ the working :
 4->there is also recipes sceeen to teach people how they cook food without gluten .
 
 5->and also there food additive screen to tell user if canned food contain numbers in their ingredient like E303 ,the app will allow user to search on these number and will tell them what is the status of this substance .
+Planning Phase : 
+![PHOTO-2022-05-01-21-40-11](https://user-images.githubusercontent.com/40899021/218011024-c1d7c94f-24bc-483c-b74f-9f0643099413.jpg)
+
 
 System Architecture : ![PHOTO-2022-06-03-00-22-13](https://user-images.githubusercontent.com/40899021/218008638-129257a9-8bbe-4958-b7eb-9545c133fffd.jpg)
 
