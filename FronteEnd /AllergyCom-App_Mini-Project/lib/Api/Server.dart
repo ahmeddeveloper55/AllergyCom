@@ -14,7 +14,7 @@ import 'package:minip/model/PostBus.dart';
 
 Future<List<ModelClass>> getApiReq (List<ModelClass> model) async {
    try {
-      final resp = await http.get(Uri.parse("https://allergycomtips.herokuapp.com/allergy"));
+      final resp = await http.get(Uri.parse("https://allergycomapifordeployment-production.up.railway.app/api/Tips/tips"));
       final body = json.decode(resp.body);
       if(resp.statusCode == 200){
             for(Map item in body){
@@ -30,7 +30,7 @@ return model;
 }
 Future<List<ModelRecipe>> getApiReqRecipe (List<ModelRecipe> modelR) async {
    try {
-      final resp = await http.get(Uri.parse("https://getrecipesjson.herokuapp.com/recipes/"));
+      final resp = await http.get(Uri.parse("https://allergycomapifordeployment-production.up.railway.app/api/Recipes/recipe"));
       final body = json.decode(resp.body);
       if(resp.statusCode == 200){
          for(Map item in body){
@@ -46,7 +46,7 @@ Future<List<ModelRecipe>> getApiReqRecipe (List<ModelRecipe> modelR) async {
 }
 Future<List<PostBus>> getApiFoodAdditive (List<PostBus> modelR) async {
    try {
-      final resp = await http.get(Uri.parse("https://secret-hamlet-29018.herokuapp.com/modelData"));
+      final resp = await http.get(Uri.parse("https://allergycomapifordeployment-production.up.railway.app/api/foodAdditive/Additive"));
       final body = json.decode(resp.body);
       if(resp.statusCode == 200){
          for(Map item in body){
