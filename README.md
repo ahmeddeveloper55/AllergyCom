@@ -21,21 +21,12 @@ System Architecture : ![PHOTO-2022-06-03-00-22-13](https://user-images.githubuse
 
 
 Photos : 
+![Screenshot 1444-08-29 at 9 06 05 PM](https://user-images.githubusercontent.com/40899021/226664602-00426a14-448d-4683-91ce-76b7d0e3d143.png)
+![Screenshot 1444-08-29 at 9 05 45 PM](https://user-images.githubusercontent.com/40899021/226664627-bac7987f-539a-4937-9e83-d6a27cef7aff.png)
+![Screenshot 1444-08-29 at 9 05 38 PM](https://user-images.githubusercontent.com/40899021/226664638-1080e412-949e-4582-9e14-b51346f16bc6.png)
+![Screenshot 1444-08-29 at 9 05 26 PM](https://user-images.githubusercontent.com/40899021/226664664-6eec01df-89f0-4b3b-b941-51dcf0507c2a.png)
 
- ![PHOTO-2022-07-07-09-30-27](https://user-images.githubusercontent.com/40899021/218263230-00140fee-d843-44ff-9fcf-11f498442082.jpg)
- 
-![PHOTO-2022-07-07-09-30-28](https://user-images.githubusercontent.com/40899021/218263232-cb24cccf-63d9-44e1-bb1e-3c5bd1841f7b.jpg)
 
-
-![PHOTO-2022-07-07-09-30-40](https://user-images.githubusercontent.com/40899021/218263233-61c7b967-fc1f-4b94-972b-2f1e378cff87.jpg)
-
-![PHOTO-2022-07-07-09-30-42](https://user-images.githubusercontent.com/40899021/218263234-b2b125a7-2f9f-450f-97fd-be721cb6ed23.jpg)
-
-![PHOTO-2022-07-22-20-32-05](https://user-images.githubusercontent.com/40899021/218263235-73ebce62-4db8-4a05-acda-5197e1aa7638.jpg)
-
-![PHOTO-2022-07-22-20-32-07](https://user-images.githubusercontent.com/40899021/218263236-532870a8-e3db-43b4-b2fa-abe49dc2558c.jpg)
-
-![PHOTO-2022-07-22-20-32-08](https://user-images.githubusercontent.com/40899021/218263237-e63e0019-0c44-474e-be5a-ee483a96574c.jpg)
 
 Video Link to the app WorkFlow,
 
