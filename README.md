@@ -28,7 +28,4 @@ Photos :
 
 
 
-Video Link to the app WorkFlow,
-
-https://user-images.githubusercontent.com/40899021/202850791-7fd76435-32fe-4e46-8376-47c801844ac0.mp4
 
