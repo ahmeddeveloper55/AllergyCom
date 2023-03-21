@@ -1,5 +1,5 @@
-# AllergyCom_App-Mini_Project-
-AllergyCom is An Application That Provide Complete Plan And Guide to the people Who Got Celaic Disease(Allergy from Gluten ) So The app will act as handbook for them , It Will Give them Tips,New Recipes ,Figure out Hidden Gluten.
+# CeliacCom-
+CeliacCom is An Application That Provide Complete Plan And Guide to the people Who Got Celaic Disease(Allergy from Gluten ) So The app will act as handbook for them , It Will Give them Tips,New Recipes ,Figure out Hidden Gluten.
 
 
 the working : 
