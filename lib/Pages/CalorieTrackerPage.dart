@@ -174,14 +174,38 @@ class _CalorieTrackerPageState extends State<CalorieTrackerPage> {
                     ),
                   ),
                   SizedBox(height: 10,),
-                  Text(
-                    "\nCalories: $res_calorie Calories",
-                    style: const TextStyle(
-                      fontSize: 13,
-                      color: Colors.black54,
-                      fontWeight: FontWeight.w500,
+                  // Text(
+                  //   "\nCalories: $res_calorie Calories",
+                  //   style: const TextStyle(
+                  //     fontSize: 20,
+                  //     color: Colors.black54,
+                  //     fontWeight: FontWeight.w500,
+                  //   ),
+                  // ),
+                RichText(
+                    text: TextSpan(
+                      text: "\nCalories: ",
+                      style: DefaultTextStyle.of(context).style,
+                      children: <TextSpan>[
+                        TextSpan(
+                          text: "$res_calorie",
+                          style: TextStyle(
+                            fontSize: 25,
+                            color: Colors.green,
+                            fontWeight: FontWeight.w700
+                          ),
+                        ),
+                        TextSpan(
+                          text: " Calories",
+                          style: TextStyle(
+                              fontSize: 15,
+                          ),
+                        ),
+                      ]
+
                     ),
-                  ),
+
+                )
                 ],
               ),
             ),
