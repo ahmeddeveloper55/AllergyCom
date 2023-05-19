@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:minip/Pages/MianPage.dart';
 
 import '../Widgets/BottomButtonBar.dart';
 import 'CalorieTrackerPage.dart';
@@ -17,7 +18,7 @@ class _MyhomePageWelcomeState extends State<MyhomePageWelcome> {
 
   final List<Widget> _pages = [
     CommunityBlockChain(),
-    Welcome(),
+    MainPage(),
     CalorieTrackerPage(),
   ];
   void _onTabTapped(int index) {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:minip/Pages/MianPage.dart';
+import 'package:minip/Pages/MyhomePageWelcome.dart';
 import 'package:minip/Widgets/constants.dart';
 import 'dart:convert';
 import 'package:minip/Pages/User.dart';
@@ -279,13 +280,7 @@ class _WelcomeState extends State<Welcome> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => MainPage(
-                          age: this.age.toString(),
-                          height: this.height,
-                          weight: this.weight,
-                          gender: this.genderEdit,
-                          pref: this.pref,
-                        ),
+                        builder: (context) =>MyhomePageWelcome(),
                       ),
                     );
                   },

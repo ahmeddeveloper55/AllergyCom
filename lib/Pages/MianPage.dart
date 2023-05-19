@@ -8,20 +8,9 @@ import 'CommunityBlockChain.dart';
 import 'User.dart';
 
 class MainPage extends StatefulWidget {
-  final age;
-  final height;
-  final weight;
-  final gender;
-  final pref;
-  final mealtype;
+
   const MainPage(
-      {Key key,
-      @required this.age,
-      @required this.height,
-      @required this.weight,
-      @required this.gender,
-      @required this.pref,
-      this.mealtype})
+      {Key key,})
       : super(key: key);
 
   @override

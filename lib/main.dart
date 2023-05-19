@@ -8,8 +8,8 @@ import 'Pages/Home_page.dart';
 import 'Pages/MianPage.dart';
 import 'Pages/Welcome.dart';
 import 'Pages/recipes_page.dart';
-import 'Pages/SignIN_page.dart';
-import 'Pages/SignOut_page.dart';
+import 'Pages/otp_login_page.dart';
+import 'Pages/otp_verify_page.dart';
 import 'package:provider/provider.dart';
 import 'package:minip/Pages/User.dart';
 import 'package:minip/Pages/MyhomePageWelcome.dart';
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: MyhomePageWelcome(),
+        home: LoginPage(),
         theme: ThemeData.light().copyWith(
           colorScheme: ColorScheme.fromSwatch(accentColor: Colors.black54),
         ),
