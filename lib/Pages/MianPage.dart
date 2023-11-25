@@ -8,10 +8,9 @@ import 'CommunityBlockChain.dart';
 import 'User.dart';
 
 class MainPage extends StatefulWidget {
-
-  const MainPage(
-      {Key key,})
-      : super(key: key);
+  const MainPage({
+    Key key,
+  }) : super(key: key);
 
   @override
   _MainPageState createState() => _MainPageState();
@@ -41,6 +40,8 @@ class _MainPageState extends State<MainPage>
     super.dispose();
   }
 
+  //FoodAdditive_Page()
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -65,7 +66,6 @@ class _MainPageState extends State<MainPage>
           controller: _controller,
           tabs: [
             Tab(
-
               child: Text(
                 "Scan",
                 style: TextStyle(color: Colors.black54),

@@ -16,10 +16,6 @@ class BottomButtonBar extends StatelessWidget {
       unselectedItemColor: Colors.grey,
       items: [
         BottomNavigationBarItem(
-          icon: Icon(Icons.group),
-          label: 'Community',
-        ),
-        BottomNavigationBarItem(
           icon: Icon(Icons.assistant),
           label: 'Assist',
         ),

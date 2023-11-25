@@ -24,20 +24,6 @@ class _UserState extends State<User> {
   CroppedFile croppedFile;
   String scannedText = "";
 
-  // static List<Nutrient> _userDetails = [];
-  // static List<String> mealType = ["Breakfast","Lunch","Dinner"];
-  // final uri = 'https://nin-api.herokuapp.com/19/M/ASH';
-
-  // Future<Null> getUser() async {
-  //   final response = await http.get(Uri.parse('https://allergycomm.herokuapp.com/${widget.age}/${widget.gender}/${widget.weight}'));
-
-  //   final responseJson = json.decode(response.body);
-  //   setState(() {
-  //     for (Map user in responseJson) {
-  //       _userDetails.add(Nutrient.fromJson(user));
-  //     }
-  //   });
-
   @override
   void initState() {
     super.initState();
@@ -48,106 +34,106 @@ class _UserState extends State<User> {
     return Scaffold(
         backgroundColor: Colors.grey.shade200,
         body: SingleChildScrollView(
-      child: Center(
-        child: Container(
-          child: Column(
-            children: [
-              if (textScanning) const CircularProgressIndicator(),
-              if (!textScanning && imageFile == null)
-                Container(
-                  width: 300,
-                  height: 300,
-                  color: Colors.grey[300],
-                ),
-              if (imageFile != null) Image.file(File(imageFile.path)),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+          child: Center(
+            child: Container(
+              child: Column(
                 children: [
-                  Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 5),
-                    padding: const EdgeInsets.only(top: 10),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.white,
-                        onPrimary: Colors.grey,
-                        shadowColor: Colors.grey[400],
-                        elevation: 10,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8.0)),
-                      ),
-                      onPressed: () {
-                        getImage(ImageSource.gallery);
-                      },
-                      child: Container(
-                        margin: const EdgeInsets.symmetric(
-                            vertical: 5, horizontal: 5),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Icon(
-                              Icons.image,
-                              size: 30,
-                            ),
-                            Text(
-                              "Gallery",
-                              style: TextStyle(
-                                  fontSize: 13, color: Colors.grey[600]),
-                            )
-                          ],
-                        ),
-                      ),
+                  if (textScanning) const CircularProgressIndicator(),
+                  if (!textScanning && imageFile == null)
+                    Container(
+                      width: 300,
+                      height: 300,
+                      color: Colors.grey[300],
                     ),
-                  ),
-                  Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 5),
-                      padding: const EdgeInsets.only(top: 10),
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          foregroundColor: Colors.grey,
-                          backgroundColor: Colors.white,
-                          shadowColor: Colors.grey[400],
-                          elevation: 10,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8.0)),
-                        ),
-                        onPressed: () {
-                          getImage(ImageSource.camera);
-                        },
-                        child: Container(
-                          margin: const EdgeInsets.symmetric(
-                              vertical: 5, horizontal: 5),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Icon(
-                                Icons.camera_alt,
-                                size: 30,
-                              ),
-                              Text(
-                                "Camera",
-                                style: TextStyle(
-                                    fontSize: 13, color: Colors.grey[600]),
-                              )
-                            ],
+                  if (imageFile != null) Image.file(File(imageFile.path)),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        margin: const EdgeInsets.symmetric(horizontal: 5),
+                        padding: const EdgeInsets.only(top: 10),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.white,
+                            onPrimary: Colors.grey,
+                            shadowColor: Colors.grey[400],
+                            elevation: 10,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8.0)),
+                          ),
+                          onPressed: () {
+                            getImage(ImageSource.gallery);
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.symmetric(
+                                vertical: 5, horizontal: 5),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(
+                                  Icons.image,
+                                  size: 30,
+                                ),
+                                Text(
+                                  "Gallery",
+                                  style: TextStyle(
+                                      fontSize: 13, color: Colors.grey[600]),
+                                )
+                              ],
+                            ),
                           ),
                         ),
-                      )),
+                      ),
+                      Container(
+                          margin: const EdgeInsets.symmetric(horizontal: 5),
+                          padding: const EdgeInsets.only(top: 10),
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              foregroundColor: Colors.grey,
+                              backgroundColor: Colors.white,
+                              shadowColor: Colors.grey[400],
+                              elevation: 10,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8.0)),
+                            ),
+                            onPressed: () {
+                              getImage(ImageSource.camera);
+                            },
+                            child: Container(
+                              margin: const EdgeInsets.symmetric(
+                                  vertical: 5, horizontal: 5),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Icon(
+                                    Icons.camera_alt,
+                                    size: 30,
+                                  ),
+                                  Text(
+                                    "Camera",
+                                    style: TextStyle(
+                                        fontSize: 13, color: Colors.grey[600]),
+                                  )
+                                ],
+                              ),
+                            ),
+                          )),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    child: Text(
+                      statusText,
+                      style: TextStyle(fontSize: 20),
+                    ),
+                  )
                 ],
               ),
-              const SizedBox(
-                height: 20,
-              ),
-              Container(
-                child: Text(
-                  statusText,
-                  style: TextStyle(fontSize: 20),
-                ),
-              )
-            ],
+            ),
           ),
-        ),
-      ),
-    ));
+        ));
   }
 
   void cropImage(XFile image) async {
@@ -229,7 +215,7 @@ class _UserState extends State<User> {
 
   Future<String> sendTextToServer(String scannedText) async {
     final response = await http.post(
-        Uri.parse("https://flask-production-a27f.up.railway.app/ingr"),
+        Uri.parse("https://additive-production.up.railway.app/ingr"),
         headers: {'Content-Type': 'text/plain'},
         body: scannedText);
 

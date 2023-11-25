@@ -6,6 +6,7 @@ import '../Widgets/BottomButtonBar.dart';
 import 'CalorieTrackerPage.dart';
 import 'CommunityBlockChain.dart';
 import 'Welcome.dart';
+
 class MyhomePageWelcome extends StatefulWidget {
   const MyhomePageWelcome({Key key}) : super(key: key);
 
@@ -17,7 +18,7 @@ class _MyhomePageWelcomeState extends State<MyhomePageWelcome> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    CommunityBlockChain(),
+    // CommunityBlockChain(),
     MainPage(),
     CalorieTrackerPage(),
   ];
@@ -29,15 +30,12 @@ class _MyhomePageWelcomeState extends State<MyhomePageWelcome> {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      body:  _pages[_currentIndex],
+    return Scaffold(
+      body: _pages[_currentIndex],
       bottomNavigationBar: BottomButtonBar(
         currentIndex: _currentIndex,
         onTabTapped: _onTabTapped,
       ),
     );
-
-
-
   }
 }
